@@ -1,5 +1,5 @@
 # hideout
-a highly scalable audio conversations web application.
+a highly scalable audio conversations web application build with NextJs and node.
   
 ## tech used:
 - Next.js
