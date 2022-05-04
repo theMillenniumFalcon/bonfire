@@ -1,6 +1,6 @@
 import React from "react";
 
-const ButtonLink: React.FC<React.ComponentPropsWithoutRef<"button">> = ({ children, className, ...props }) => {
+export const ButtonLink: React.FC<React.ComponentPropsWithoutRef<"button">> = ({ children, className, ...props }) => {
     return (
         <button
             {...props}
@@ -9,5 +9,3 @@ const ButtonLink: React.FC<React.ComponentPropsWithoutRef<"button">> = ({ childr
         </button>
     )
 }
-
-export default ButtonLink

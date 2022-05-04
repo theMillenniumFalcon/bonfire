@@ -1,14 +1,17 @@
-import { Box } from '@chakra-ui/react'
 import React from "react";
+import { CentreSection } from "../sections/CentreSection";
+import { LeftSection } from "../sections/LeftSection";
+import { RightSection } from "../sections/RightSection";
+import { MainWrapper } from '../wrappers/MainWrapper';
 
 export type DashboardPageProps = {}
 
-const DashboardPage: React.FC<DashboardPageProps> = ({}) => {
+export const DashboardPage: React.FC<DashboardPageProps> = ({}) => {
     return (
-        <Box>
-            DashBoard Page
-        </Box>
+        <MainWrapper>
+            <LeftSection />
+            <CentreSection />
+            <RightSection />
+        </MainWrapper>
     )
 }
-
-export default DashboardPage

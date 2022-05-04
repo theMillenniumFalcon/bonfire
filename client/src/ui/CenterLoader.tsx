@@ -3,12 +3,10 @@ import React from "react";
 
 interface CenterLoaderProps { }
 
-const CenterLoader: React.FC<CenterLoaderProps> = ({ }) => {
+export const CenterLoader: React.FC<CenterLoaderProps> = ({ }) => {
     return (
         <Flex align="center" justify="center" w="100%" h="100%">
             <Spinner />
         </Flex>
     )
 }
-
-export default CenterLoader

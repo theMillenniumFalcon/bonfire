@@ -12,12 +12,10 @@ export type ButtonProps = DetailedHTMLProps<
     transition?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({}) => {
+export const Button: React.FC<ButtonProps> = ({ }) => {
     return (
         <Box>
             Button
         </Box>
     )
 }
-
-export default Button
