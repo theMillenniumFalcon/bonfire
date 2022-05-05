@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonLink } from "../ui/ButtonLink";
+import { StandardLink } from "../ui/StandardLink";
 
 interface logoutProps { }
 
@@ -10,9 +10,9 @@ const Logout: React.FC<logoutProps> = ({ }) => {
 
   return (
     <>
-      <ButtonLink>
+      <StandardLink>
         click here if you are not automatically redirected
-      </ButtonLink>
+      </StandardLink>
     </>
   )
 }
