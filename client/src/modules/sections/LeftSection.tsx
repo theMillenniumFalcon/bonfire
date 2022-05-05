@@ -7,7 +7,7 @@ export interface LeftSectionProps { }
 
 export const LeftSection: React.FC<LeftSectionProps> = ({ }) => {
     return (
-        <Box w="20%" paddingLeft={2} paddingRight={2} height="100%">
+        <Box w="25%" paddingLeft={2} paddingRight={2} height="100%">
             <LeftHeader />
             <LeftSectionContent />
         </Box>

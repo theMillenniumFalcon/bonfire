@@ -8,10 +8,10 @@ export interface LeftSectionUserDetailsProps { }
 export const LeftSectionUserDetails: React.FC<LeftSectionUserDetailsProps> = ({ }) => {
     return (
         <Box>
-            <StandardUserText color="#ffffff" fontWeight="bold" cursor="pointer">
+            <StandardUserText fontSize="sm" color="#ffffff" fontWeight="bold" cursor="pointer">
                 Tobey
             </StandardUserText>
-            <StandardLink color="#5D7290">
+            <StandardLink fontSize="sm" color="#5D7290">
                 Random paragraph
             </StandardLink>
         </Box>

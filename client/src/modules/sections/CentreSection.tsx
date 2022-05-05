@@ -6,7 +6,7 @@ export interface CentreSectionProps { }
 
 export const CentreSection: React.FC<CentreSectionProps> = ({ }) => {
     return (
-        <Box w="60%" paddingLeft={2} paddingRight={2}>
+        <Box w="50%" paddingLeft={2} paddingRight={2}>
             <CentreHeader />
         </Box>
     )

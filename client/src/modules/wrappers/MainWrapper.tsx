@@ -16,7 +16,7 @@ export const MainWrapper: React.FC<WrapperProps> = ({
         <Flex
             mt={6}
             mx="auto"
-            maxW={variant === "regular" ? "1200px" : "400px"}
+            maxW={variant === "regular" ? "1300px" : "400px"}
             w="100%"
             maxH="100vh"
             h="100vh"

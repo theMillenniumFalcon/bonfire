@@ -1,9 +1,9 @@
 import { Img } from "@chakra-ui/react";
 import React from "react";
 
-export interface RightHeaderAvatarProps { }
+export interface HeaderAvatarProps { }
 
-export const RightHeaderAvatar: React.FC<RightHeaderAvatarProps> = ({ }) => {
+export const HeaderAvatar: React.FC<HeaderAvatarProps> = ({ }) => {
     return (
         <Img
             cursor='pointer'
