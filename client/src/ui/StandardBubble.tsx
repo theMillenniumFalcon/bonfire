@@ -1,13 +1,14 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
 
-export interface StandardBubbleProps { }
+export interface StandardBubbleProps {
+    color: string
+    marginRight?: string
+    backgroundColor?: string
+}
 
-export const StandardBubble: React.FC<StandardBubbleProps> = ({ }) => {
-    const Bubble = () => (
-        <Box pos="fixed" style={{ color: "#FD4D4D" }}>●</Box>
-    )
+export const StandardBubble: React.FC<StandardBubbleProps> = ({ color, marginRight, backgroundColor }) => {
     return (
-        <Bubble />
+        <Box backgroundColor={backgroundColor} color={color} marginRight={marginRight}>●</Box>
     )
 }

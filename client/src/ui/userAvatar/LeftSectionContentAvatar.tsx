@@ -17,7 +17,7 @@ export const LeftSectionContentAvatar: React.FC<LeftSectionContentAvatarProps> =
                 alt='tobey'
                 mr={3}
             />
-            <StandardBubble />
+            <StandardBubble color="#FD4D4D" />
         </Box>
     )
 }
