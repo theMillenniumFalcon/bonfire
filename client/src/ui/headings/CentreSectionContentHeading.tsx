@@ -7,7 +7,7 @@ export interface CentreSectionContentHeadingProps { }
 export const CentreSectionContentHeading: React.FC<CentreSectionContentHeadingProps> = ({ }) => {
     return (
         <Flex align="center" justify="space-between" width="100%" height="40px" color="#ffffff">
-            <Heading as='h4' size='md' marginLeft={8}>
+            <Heading as='h4' size='md' marginLeft={6}>
                 Your Feed
             </Heading>
             <StandardButton />

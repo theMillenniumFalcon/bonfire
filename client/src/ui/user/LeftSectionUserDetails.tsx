@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import { StandardLink } from "./StandardLink";
-import { StandardUserText } from "./StandardUserText";
+import { StandardLink } from "../StandardLink";
+import { StandardUserText } from "../StandardUserText";
 
 export interface LeftSectionUserDetailsProps { }
 

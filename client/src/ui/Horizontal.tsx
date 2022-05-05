@@ -6,6 +6,7 @@ export const Horizontal: React.FC<HorizontalProps> = ({ }) => {
     return (
         <hr style={{
             marginBottom: "30px",
+            marginTop: "30px",
             height: "2px",
             width: "100%",
             borderWidth: "0",

@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/react";
 import React from "react";
 import { LeftSectionContentHeading } from "../headings/LeftSectionContentHeading";
 import { OnlineNumText } from "../OnlineNumText";
-import { LeftSectionUser } from "../LeftSectionUser";
+import { LeftSectionUser } from "../user/LeftSectionUser";
 
 export interface LeftSectionContentProps { }
 
