@@ -1,4 +1,3 @@
-import { Stack } from "@chakra-ui/react";
 import React from "react";
 import { Horizontal } from "../Horizontal";
 import { DashboardRoomDefault } from "./DashboardRoomDefault";
@@ -8,10 +7,10 @@ interface RoomSectionProps { }
 
 export const RoomSection: React.FC<RoomSectionProps> = ({ }) => {
     return (
-        <Stack>
+        <>
             <DashboardRoomUpcoming />
-            <Horizontal />
+            <Horizontal marginBottom="30px" marginTop="30px" width="100%" color="#242C37" backgroundColor="#242C37" />
             <DashboardRoomDefault />
-        </Stack>
+        </>
     )
 }

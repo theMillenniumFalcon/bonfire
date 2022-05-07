@@ -1,18 +1,25 @@
+import { Box } from "@chakra-ui/react";
 import React from "react";
 
-export interface HorizontalProps { }
+export interface HorizontalProps {
+    marginBottom: string;
+    marginTop: string;
+    width: string;
+    color: string;
+    backgroundColor: string
+}
 
-export const Horizontal: React.FC<HorizontalProps> = ({ }) => {
+export const Horizontal: React.FC<HorizontalProps> = ({ marginBottom, marginTop, width, color, backgroundColor }) => {
     return (
-        <hr style={{
-            marginBottom: "30px",
-            marginTop: "30px",
-            height: "2px",
-            width: "100%",
-            borderWidth: "0",
-            color: "#242C37",
-            backgroundColor: "#242C37"
-        }}
+        <Box
+            marginBottom={marginBottom}
+            marginTop={marginTop}
+            height="2px"
+            width={width}
+            borderWidth="0"
+            color={color}
+            backgroundColor={backgroundColor}
+        
         />
     )
 }
