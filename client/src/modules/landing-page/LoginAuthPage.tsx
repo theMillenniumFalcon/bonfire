@@ -2,13 +2,15 @@ import { Box, Flex } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
 import { AuthBottomBar } from '../../ui/authentication/AuthBottomBar'
-import { AuthSection } from '../../ui/authentication/AuthSection'
+import { LoginSection } from '../../ui/authentication/login/LoginSection'
 
-export const AuthPage: React.FC = () => {
+export type LoginAuthPageProps = {}
+
+export const LoginAuthPage: React.FC<LoginAuthPageProps> = ({ }) => {
     return (
         <Box width="100vw" border="1px solid white">
             {/* <Link href="/dashboard">Dashboard</Link> */}
-            <AuthSection />
+            <LoginSection />
             <AuthBottomBar />
         </Box>
     )

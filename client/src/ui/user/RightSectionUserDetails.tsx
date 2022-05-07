@@ -11,9 +11,13 @@ export const RightSectionUserDetails: React.FC<RightSectionUserDetailsProps> = (
             <StandardUserText backgroundColor="#151A21" fontSize="md" color="#ffffff" fontWeight="bold" cursor="pointer" marginBottom="0px">
                 Tobey
             </StandardUserText>
-            <StandardLink fontSize="xs" color="#5D7290" backgroundColor="#151A21" marginTop="0px">
-                #OGspider
-            </StandardLink>
+            <StandardLink
+                href="/"
+                color='#5D7290'
+                fontSize='xs'
+                backgroundColor="#151A21"
+                marginTop="0px"
+                content='#OGspider' />
         </Box>
     )
 }

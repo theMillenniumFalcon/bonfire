@@ -9,11 +9,7 @@ interface logoutProps { }
 const Logout: React.FC<logoutProps> = ({ }) => {
 
   return (
-    <>
-      <StandardLink>
-        click here if you are not automatically redirected
-      </StandardLink>
-    </>
+    <StandardLink href="/" color='red' fontSize='15px' content='click here if you are not automatically redirected' />
   )
 }
 

@@ -1,3 +1,3 @@
-import { AuthPage } from "../modules/landing-page/AuthPage";
+import { RegisterAuthPage } from "../modules/landing-page/RegisterAuthPage";
 
-export default AuthPage
+export default RegisterAuthPage

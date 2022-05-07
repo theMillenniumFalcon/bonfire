@@ -1,22 +1,36 @@
-import { Text } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/react";
 import React from "react";
 import { StandardUserText } from './StandardUserText';
 
 export interface StandardLinkProps {
     backgroundColor?: string;
     fontSize: string;
-    children: any;
+    href: string;
     color: string;
+    content: string;
     marginTop?: string;
     marginBottom?: string;
 }
 
-export const StandardLink: React.FC<StandardLinkProps> = ({ children, backgroundColor, fontSize, color, marginTop, marginBottom }) => {
+export const StandardLink: React.FC<StandardLinkProps> = ({
+    href,
+    backgroundColor,
+    fontSize,
+    color,
+    marginTop,
+    marginBottom,
+    content
+}) => {
     return (
-        <StandardUserText fontSize={fontSize} color={color} marginTop={marginTop} marginBottom={marginBottom}>
-            <Text as='u' cursor="pointer" backgroundColor={backgroundColor}>
-                {children}
-            </Text>
+        <StandardUserText
+            fontSize={fontSize}
+            color={color}
+            marginTop={marginTop}
+            marginBottom={marginBottom}
+        >
+            <Link href={href} cursor="pointer" backgroundColor={backgroundColor}>
+                {content}
+            </Link>
         </StandardUserText>
     )
 }

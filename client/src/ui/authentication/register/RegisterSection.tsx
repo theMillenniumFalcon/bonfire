@@ -1,10 +1,10 @@
 import { Flex } from "@chakra-ui/react";
 import React from "react";
-import { RegisterCard } from "./register/RegisterCard";
+import { RegisterCard } from "./RegisterCard";
 
-export interface AuthSectionProps { }
+export interface RegisterSectionProps { }
 
-export const AuthSection: React.FC<AuthSectionProps> = ({ }) => {
+export const RegisterSection: React.FC<RegisterSectionProps> = ({ }) => {
     return (
         <Flex align="center" justify="center" height="100%">
             <RegisterCard />

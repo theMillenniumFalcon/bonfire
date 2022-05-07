@@ -11,9 +11,7 @@ export const LeftSectionUserDetails: React.FC<LeftSectionUserDetailsProps> = ({ 
             <StandardUserText fontSize="sm" color="#ffffff" fontWeight="bold" cursor="pointer">
                 Tobey
             </StandardUserText>
-            <StandardLink fontSize="sm" color="#5D7290">
-                Random paragraph
-            </StandardLink>
+            <StandardLink href="/" color='#5D7290' fontSize='sm' content='Random paragraph' />
         </Box>
     )
 }
