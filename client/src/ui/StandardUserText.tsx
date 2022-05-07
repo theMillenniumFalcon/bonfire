@@ -2,7 +2,7 @@ import { Text } from "@chakra-ui/react";
 import React from "react";
 
 export interface StandardUserTextProps {
-    fontSize: string;
+    fontSize?: string;
     children: any;
     color: string;
     backgroundColor?: string;
