@@ -4,6 +4,7 @@ import React from "react";
 export interface StandardRoomTextProps {
     children: any;
     color: string;
+    fontSize: string;
     marginTop?: string;
     marginBottom?: string;
     fontWeight?: string;
@@ -12,11 +13,11 @@ export interface StandardRoomTextProps {
 }
 
 export const StandardRoomText: React.FC<StandardRoomTextProps> = ({
-    children, cursor, color, marginTop, marginBottom, fontWeight, backgroundColor
+    children, fontSize, cursor, color, marginTop, marginBottom, fontWeight, backgroundColor
 }) => {
     return (
         <Text
-            fontSize='sm'
+            fontSize={fontSize}
             letterSpacing="0.7px"
             backgroundColor={backgroundColor}
             color={color}

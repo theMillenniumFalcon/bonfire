@@ -9,7 +9,7 @@ export const RoomName: React.FC<RoomNameProps> = ({ }) => {
     return (
         <Flex align="center" justify="space-between" backgroundColor="#151A21">
             <Time />
-            <StandardRoomText color="#ffffff" fontWeight="bold">
+            <StandardRoomText color="#ffffff" fontWeight="bold" fontSize="sm">
                 Chill talks
             </StandardRoomText>
         </Flex>

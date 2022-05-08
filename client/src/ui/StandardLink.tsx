@@ -1,6 +1,7 @@
 import { Link } from "@chakra-ui/react";
 import React from "react";
 import { StandardUserText } from './StandardUserText';
+import NextLink from 'next/link'
 
 export interface StandardLinkProps {
     backgroundColor?: string;
@@ -28,9 +29,11 @@ export const StandardLink: React.FC<StandardLinkProps> = ({
             marginTop={marginTop}
             marginBottom={marginBottom}
         >
-            <Link href={href} cursor="pointer" backgroundColor={backgroundColor}>
-                {content}
-            </Link>
+            <NextLink href={href}>
+                <Link cursor="pointer" backgroundColor={backgroundColor}>
+                    {content}
+                </Link>
+            </NextLink>
         </StandardUserText>
     )
 }
