@@ -4,7 +4,7 @@ import React from "react";
 export interface StandardButtonProps {
     height: string;
     width: string;
-    content: string;
+    content: any;
     isLoading?: any;
 }
 

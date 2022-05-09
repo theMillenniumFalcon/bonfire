@@ -19,7 +19,6 @@ export const Horizontal: React.FC<HorizontalProps> = ({ marginBottom, marginTop,
             borderWidth="0"
             color={color}
             backgroundColor={backgroundColor}
-        
         />
     )
 }

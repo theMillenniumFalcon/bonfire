@@ -8,7 +8,7 @@ export interface RoomCardHeaderProps { }
 
 export const RoomCardHeader: React.FC<RoomCardHeaderProps> = ({ }) => {
     return (
-        <Box p={4} height="17%" backgroundColor="#151A21">
+        <Box p={4} height="17%" backgroundColor="#151A21" marginBottom="10px">
             <RoomCardHeaderName />
             <RoomCardHeaderCreator />
             <RoomCardHeaderDesc />
