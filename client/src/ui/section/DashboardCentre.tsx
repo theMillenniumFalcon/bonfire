@@ -7,7 +7,7 @@ export interface DashboardCentreProps { }
 
 export const DashboardCentre: React.FC<DashboardCentreProps> = ({ }) => {
   return (
-    <Box height="40px">
+    <Box>
       <MainSearchBar />
       <DashboardCentreSectionContent />
     </Box>

@@ -7,7 +7,7 @@ export interface UserCentreProps { }
 
 export const UserCentre: React.FC<UserCentreProps> = ({ }) => {
   return (
-    <Box height="40px">
+    <Box>
       <MainSearchBar />
       <UserCentreSectionContent />
     </Box>

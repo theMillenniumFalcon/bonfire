@@ -1,17 +1,17 @@
 import React from "react";
-import { Img } from "@chakra-ui/react";
+import TwitterIcon from '@mui/icons-material/Twitter';
+import { Box } from "@chakra-ui/react";
 
 export interface TwitterProps { }
 
 export const Twitter: React.FC<TwitterProps> = ({ }) => {
     return (
-        <Img
-            cursor='pointer'
-            htmlWidth='25px'
-            htmlHeight='25px'
-            objectFit='cover'
-            src='twitter.png'
-            alt='twitter'
-        />
+        <Box
+            backgroundColor="#0B0E11"
+            color="#ffffff"
+            cursor="pointer"
+        >
+            <TwitterIcon style={{ backgroundColor: "#0B0E11" }} />
+        </Box>
     )
 }

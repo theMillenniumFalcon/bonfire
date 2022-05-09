@@ -1,18 +1,18 @@
 import React from "react";
-import { Img } from "@chakra-ui/react";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Box } from "@chakra-ui/react";
 
 export interface LinkedInProps { }
 
 export const LinkedIn: React.FC<LinkedInProps> = ({ }) => {
     return (
-        <Img
-            cursor='pointer'
-            htmlWidth='25px'
-            htmlHeight='25px'
-            objectFit='cover'
-            src='linkedin.png'
-            alt='twitter'
+        <Box
+            backgroundColor="#0B0E11"
             mr={5}
-        />
+            color="#ffffff"
+            cursor="pointer"
+        >
+            <LinkedInIcon style={{ backgroundColor: "#0B0E11" }} />
+        </Box>
     )
 }

@@ -7,7 +7,7 @@ export interface RoomCentreProps { }
 
 export const RoomCentre: React.FC<RoomCentreProps> = ({ }) => {
   return (
-    <Box height="40px">
+    <Box>
       <MainSearchBar />
       <RoomCentreSectionContent />
     </Box>

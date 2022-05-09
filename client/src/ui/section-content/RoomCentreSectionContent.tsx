@@ -6,7 +6,7 @@ export interface RoomCentreSectionContentProps { }
 
 export const RoomCentreSectionContent: React.FC<RoomCentreSectionContentProps> = ({ }) => {
     return (
-        <Box marginTop={12} height="80vh">
+        <Box marginTop={12}>
             <CentreSectionRoomCard />
         </Box>
     )

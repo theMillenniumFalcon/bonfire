@@ -5,7 +5,7 @@ export interface RoomCardMembersProps { }
 
 export const RoomCardMembers: React.FC<RoomCardMembersProps> = ({ }) => {
     return (
-        <Box p={4} height="73%" backgroundColor="#151A21">
+        <Box p={4} height="72%" backgroundColor="#151A21">
             Hello
         </Box>
     )

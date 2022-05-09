@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
 import { AuthBottomBar } from '../../ui/authentication/AuthBottomBar'
