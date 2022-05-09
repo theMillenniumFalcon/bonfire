@@ -25,7 +25,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({ }) => {
             //   return register(values)
         }}>
             {({ isSubmitting }) => (
-               <Box backgroundColor="#151A21">
+               <Box color="#ffffff">
                     <Form>
                     <Box mt={4} backgroundColor="#151A21">
                         <InputField name="username" placeholder="username" label="Username" />
@@ -33,7 +33,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({ }) => {
                     <Box mt={4}>
                         <InputField name="password" placeholder="password" label="Password" type="password" />
                     </Box>
-                    <Flex mt={5} align="center" justify="space-between">
+                    <Flex mt={5} align="center" justify="space-between" color="#0B0E11">
                         <StandardButton height="38px" width="120px" content="Login" isLoading={isSubmitting} />
                         <StandardLink href="/" color='red' fontSize='15px' content='Create a new account' />
                     </Flex>

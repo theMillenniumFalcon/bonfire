@@ -19,7 +19,6 @@ export const MainWrapper: React.FC<WrapperProps> = ({
             maxW={variant === "regular" ? "1300px" : "400px"}
             w="100%"
             maxH="100vh"
-            h="100vh"
         >
             {children}
         </Flex>
