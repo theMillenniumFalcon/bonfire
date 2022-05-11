@@ -6,7 +6,7 @@ export interface RightSectionUserCardProps { }
 
 export const RightSectionUserCard: React.FC<RightSectionUserCardProps> = ({ }) => {
     return (
-        <Box p={5} backgroundColor="#151A21" borderRadius="4px">
+        <Box p={5} backgroundColor="#151A21" borderRadius="4px" height="25vh">
             <RightSectionUser />
         </Box>
     )

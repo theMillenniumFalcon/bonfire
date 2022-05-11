@@ -5,6 +5,7 @@ export interface StandardButtonProps {
     height: string;
     width: string;
     content: any;
+    onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
     isLoading?: any;
 }
 
@@ -12,8 +13,10 @@ export const StandardButton: React.FC<StandardButtonProps> = ({
     height,
     width,
     content,
+    onClick,
     isLoading
 }) => {
+
     return (
         <Button
             size='sm'
@@ -23,6 +26,7 @@ export const StandardButton: React.FC<StandardButtonProps> = ({
             border='0px'
             backgroundColor="#FD4D4D"
             _hover={{ bg: '#fc6161' }}
+            onClick={onClick}
         >
             {content}
         </Button>

@@ -2,9 +2,9 @@ import { Text } from "@chakra-ui/react";
 import React from "react";
 
 export interface StandardRoomTextProps {
-    children: any;
+    children?: any;
     color: string;
-    fontSize: string;
+    fontSize?: string;
     marginTop?: string;
     marginBottom?: string;
     fontWeight?: string;

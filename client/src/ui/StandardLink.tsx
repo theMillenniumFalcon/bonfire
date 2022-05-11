@@ -9,8 +9,6 @@ export interface StandardLinkProps {
     href: string;
     color: string;
     content: string;
-    marginTop?: string;
-    marginBottom?: string;
 }
 
 export const StandardLink: React.FC<StandardLinkProps> = ({
@@ -18,16 +16,14 @@ export const StandardLink: React.FC<StandardLinkProps> = ({
     backgroundColor,
     fontSize,
     color,
-    marginTop,
-    marginBottom,
     content
 }) => {
     return (
         <StandardUserText
             fontSize={fontSize}
             color={color}
-            marginTop={marginTop}
-            marginBottom={marginBottom}
+            marginBottom="0px"
+            marginTop="0px"
         >
             <NextLink href={href}>
                 <Link cursor="pointer" backgroundColor={backgroundColor}>
