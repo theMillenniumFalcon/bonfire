@@ -1,10 +1,13 @@
-import { Box } from '@chakra-ui/react'
-import React from 'react'
+import React from "react";
+import { MainWrapper } from "../wrappers/MainWrapper";
+import { LeftSettingsSection } from "../sections/LeftSettingsSection";
+import { SettingsCentreSection } from "../sections/SettingsCentreSection";
 
 export const VoiceSettingsPage: React.FC = () => {
     return (
-        <Box>
-           Voice setting
-        </Box>
+        <MainWrapper>
+            <LeftSettingsSection />
+            <SettingsCentreSection />
+        </MainWrapper>
     )
 }

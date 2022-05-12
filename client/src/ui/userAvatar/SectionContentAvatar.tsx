@@ -6,24 +6,24 @@ export interface SectionContentAvatarProps {
     color?: string;
     htmlWidth: string;
     htmlHeight: string;
-    backgroundColor?: string
-
+    backgroundColor?: string;
+    marginRight?: string;
 }
 
-export const SectionContentAvatar: React.FC<SectionContentAvatarProps> = ({ htmlWidth, htmlHeight, backgroundColor, color }) => {
+export const SectionContentAvatar: React.FC<SectionContentAvatarProps> = ({ 
+    htmlWidth, htmlHeight, backgroundColor, color, marginRight }) => {
     return (
-        <Box pos="relative">
+        <Box backgroundColor={backgroundColor}>
             <Img
                 cursor='pointer'
                 color={color}
-                backgroundColor={backgroundColor}
                 htmlWidth={htmlWidth}
                 htmlHeight={htmlHeight}
                 objectFit='cover'
                 borderRadius="50%"
                 src='user.jpg'
                 alt='tobey'
-                mr={3}
+                mr={marginRight}
             />
             {/* <StandardBubble color="#FD4D4D" /> */}
         </Box>

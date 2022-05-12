@@ -11,7 +11,7 @@ export const LogoIcon: React.FC<LogoIconProps> = ({ }) => {
             htmlHeight='60px'
             objectFit='cover'
             borderRadius="50%"
-            src='logo.png'
+            src='https://w7.pngwing.com/pngs/574/475/png-transparent-logo-xunit-random-org-randomness-computer-software-logo-github-blue-angle-text.png'
             alt='hideout'
             mr={2}
         />

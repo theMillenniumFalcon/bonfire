@@ -11,7 +11,7 @@ export const PrivacySettingsButton: React.FC<PrivacySettingsButtonProps> = ({ })
             height="28px"
             width="110px"
             content="Privacy Settings"
-            onClick={() => router.push('/privacy-settings')}
+            onClick={() => router.push('/settings/privacy')}
         />
     )
 }

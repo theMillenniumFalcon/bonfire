@@ -11,7 +11,7 @@ export const SoundSettingsButton: React.FC<SoundSettingsButtonProps> = ({ }) => 
             height="28px"
             width="110px"
             content="Sound Settings"
-            onClick={() => router.push('/sound-settings')}
+            onClick={() => router.push('/settings/sound')}
         />
     )
 }

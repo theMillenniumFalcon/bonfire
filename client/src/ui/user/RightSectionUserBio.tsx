@@ -3,20 +3,25 @@ import React from "react";
 import { StandardLink } from "../StandardLink";
 import { StandardUserText } from "../StandardUserText";
 
-export interface RightSectionUserDetailsProps { }
+export interface RightSectionUserBioProps { }
 
-export const RightSectionUserDetails: React.FC<RightSectionUserDetailsProps> = ({ }) => {
+export const RightSectionUserBio: React.FC<RightSectionUserBioProps> = ({ }) => {
     return (
         <Box>
-            <StandardUserText backgroundColor="#151A21" fontSize="md" color="#ffffff" fontWeight="bold" cursor="pointer" marginBottom="0px">
-                Tobey
+            <StandardUserText
+                backgroundColor="#151A21"
+                fontSize="md"
+                color="#5D7290"
+                fontWeight="450"
+            >
+                My bio...
             </StandardUserText>
             <StandardLink
                 href="/"
                 color='#5D7290'
                 fontSize='xs'
                 backgroundColor="#151A21"
-                content='#OGspider' 
+                content='https://mysite.dev'
             />
         </Box>
     )

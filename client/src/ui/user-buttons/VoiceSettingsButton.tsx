@@ -11,7 +11,7 @@ export const VoiceSettingsButton: React.FC<VoiceSettingsButtonProps> = ({ }) => 
             height="28px"
             width="110px"
             content="Voice Settings"
-            onClick={() => router.push('/voice-settings')}
+            onClick={() => router.push('/settings/voice')}
         />
     )
 }

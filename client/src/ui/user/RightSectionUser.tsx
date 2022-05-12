@@ -8,7 +8,12 @@ export interface RightSectionUserProps { }
 export const RightSectionUser: React.FC<RightSectionUserProps> = ({ }) => {
     return (
         <Flex align="center" backgroundColor="#151A21">
-            <SectionContentAvatar htmlHeight="45px" htmlWidth="45px" backgroundColor="#151A21" />
+            <SectionContentAvatar
+                htmlHeight="65px"
+                htmlWidth="65px"
+                backgroundColor="#151A21"
+                marginRight="10px"
+            />
             <RightSectionUserDetails />
         </Flex>
     )
