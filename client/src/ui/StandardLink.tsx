@@ -22,11 +22,10 @@ export const StandardLink: React.FC<StandardLinkProps> = ({
         <StandardUserText
             fontSize={fontSize}
             color={color}
-            marginBottom="0px"
-            marginTop="0px"
+            backgroundColor={backgroundColor}
         >
             <NextLink href={href}>
-                <Link cursor="pointer" backgroundColor={backgroundColor}>
+                <Link cursor="pointer">
                     {content}
                 </Link>
             </NextLink>

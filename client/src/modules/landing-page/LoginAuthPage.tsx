@@ -8,10 +8,10 @@ export type LoginAuthPageProps = {}
 
 export const LoginAuthPage: React.FC<LoginAuthPageProps> = ({ }) => {
     return (
-        <Box width="100vw" border="1px solid white">
+        <Flex direction="column" align="center" justify="center" width="100vw" border="1px solid white" height="100%">
             {/* <Link href="/dashboard">Dashboard</Link> */}
             <LoginSection />
             <AuthBottomBar />
-        </Box>
+        </Flex>
     )
 }

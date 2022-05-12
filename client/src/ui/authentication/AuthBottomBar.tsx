@@ -7,7 +7,7 @@ export interface AuthBottomBarProps { }
 
 export const AuthBottomBar: React.FC<AuthBottomBarProps> = ({ }) => {
     return (
-        <Flex bottom="0" align="center" justify="space-between" border="1px solid white" paddingLeft={4} paddingRight={10}>
+        <Flex width="100%" bottom="0" align="center" justify="space-between" border="1px solid white" paddingLeft={4} paddingRight={10}>
             <Logo />
             <AuthBottomBarIconGrp />
         </Flex>
