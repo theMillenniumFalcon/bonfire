@@ -21,7 +21,7 @@ export const SectionContentAvatar: React.FC<SectionContentAvatarProps> = ({
                 htmlHeight={htmlHeight}
                 objectFit='cover'
                 borderRadius="50%"
-                src='user.jpg'
+                src='https://pbs.twimg.com/profile_images/1437439089284952069/B_uA3THD_400x400.jpg'
                 alt='tobey'
                 mr={marginRight}
             />

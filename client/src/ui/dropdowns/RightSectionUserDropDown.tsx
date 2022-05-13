@@ -1,11 +1,13 @@
 import { HamburgerIcon, ExternalLinkIcon, InfoIcon, SettingsIcon } from "@chakra-ui/icons";
 import { Menu, MenuButton, IconButton, MenuList, MenuItem } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import React from "react";
 import { StandardUserText } from "../StandardUserText";
 
 export interface RightSectionUserDropDownProps { }
 
 export const RightSectionUserDropDown: React.FC<RightSectionUserDropDownProps> = ({ }) => {
+    const router = useRouter()
     return (
         <Menu>
             <MenuButton
@@ -24,7 +26,9 @@ export const RightSectionUserDropDown: React.FC<RightSectionUserDropDownProps> =
                         View Profile
                     </StandardUserText>
                 </MenuItem>
-                <MenuItem icon={<SettingsIcon />} style={{ backgroundColor: "#0B0E11" }}>
+                <MenuItem icon={<SettingsIcon />} style={{ backgroundColor: "#0B0E11" }}
+                onClick={() => router.push('/settings/voice')}
+                >
                     <StandardUserText color="#ffffff" fontSize="15px" fontWeight="600">
                         Settings
                     </StandardUserText>

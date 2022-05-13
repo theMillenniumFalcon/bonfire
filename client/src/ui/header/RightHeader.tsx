@@ -1,7 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import React from "react";
 import { IconGroup } from "../IconGroup";
-import { HeaderAvatar } from "../userAvatar/HeaderAvatar";
+import { HeaderAvatar } from "../user-avatar/HeaderAvatar";
 
 export interface RightHeaderProps { }
 

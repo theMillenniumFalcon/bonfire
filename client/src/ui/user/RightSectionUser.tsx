@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import React from "react";
-import { SectionContentAvatar } from "../userAvatar/SectionContentAvatar";
+import { SectionContentAvatar } from "../user-avatar/SectionContentAvatar";
 import { RightSectionUserDetails } from "./RightSectionUserDetails";
 
 export interface RightSectionUserProps { }

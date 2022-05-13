@@ -5,15 +5,14 @@ export interface UserCentreSectionBannerProps { }
 
 export const UserCentreSectionBanner: React.FC<UserCentreSectionBannerProps> = ({ }) => {
     return (
-        <Box>
+        <Box width="100%">
             <Img
                 htmlWidth="100"
                 htmlHeight="130"
                 objectFit='cover'
-                src='./banner.jpg'
+                // src='https://previews.123rf.com/images/vectorsilhouettes/vectorsilhouettes1802/vectorsilhouettes180200068/96275133-paisaje-urbano-horizontal-con-edificios-de-la-ciudad-ciudad-reflejada-en-el-agua-del-r%C3%ADo-.jpg'
                 alt='banner'
             />
-            {/* <StandardBubble color="#FD4D4D" /> */}
         </Box>
     )
 }
