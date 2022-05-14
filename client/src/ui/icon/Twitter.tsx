@@ -7,11 +7,12 @@ export interface TwitterProps { }
 export const Twitter: React.FC<TwitterProps> = ({ }) => {
     return (
         <Box
-            backgroundColor="#0B0E11"
+            backgroundColor="#FD4D4D"
+            mr={5}
             color="#ffffff"
             cursor="pointer"
         >
-            <TwitterIcon style={{ backgroundColor: "#0B0E11" }} />
+            <TwitterIcon style={{ backgroundColor: "#FD4D4D" }} />
         </Box>
     )
 }

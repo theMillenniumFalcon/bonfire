@@ -25,20 +25,20 @@ export const LoginForm: React.FC<LoginFormProps> = ({ }) => {
             //   return register(values)
         }}>
             {({ isSubmitting }) => (
-               <Box color="#ffffff">
+                <Box color="#ffffff" width="100%">
                     <Form>
-                    <Box mt={4} backgroundColor="#151A21">
-                        <InputField name="username" placeholder="username" label="Username" />
-                    </Box>
-                    <Box mt={4}>
-                        <InputField name="password" placeholder="password" label="Password" type="password" />
-                    </Box>
-                    <Flex mt={5} align="center" justify="space-between" color="#0B0E11">
-                        <StandardButton height="38px" width="120px" content="Login" isLoading={isSubmitting} />
-                        <StandardLink href="/" color='red' fontSize='15px' content='Create a new account' />
-                    </Flex>
-                </Form>
-               </Box>
+                        <Box pt={4} backgroundColor="#151A21">
+                            <InputField name="username" placeholder="username" label="Username" />
+                        </Box>
+                        <Box pt={4} backgroundColor="#151A21">
+                            <InputField name="password" placeholder="password" label="Password" type="password" />
+                        </Box>
+                        <Flex pt={5} align="center" justify="space-between" color="#0B0E11" backgroundColor="#151A21">
+                            <StandardButton height="38px" width="120px" content="Login" isLoading={isSubmitting} />
+                            <StandardLink backgroundColor="#151A21" href="/" color='red' fontSize='15px' content='Create a new account' />
+                        </Flex>
+                    </Form>
+                </Box>
             )}
         </Formik>
     )

@@ -25,20 +25,20 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({ }) => {
             //   return register(values)
         }}>
             {({ isSubmitting }) => (
-                <Box color="#ffffff" backgroundColor="#151A21">
+                <Box color="#ffffff" width="100%">
                     <Form>
-                        <Box mt={4} backgroundColor="#151A21">
+                        <Box pt={4} backgroundColor="#151A21">
                             <InputField name="username" placeholder="username" label="Username" />
                         </Box>
-                        <Box mt={4}>
+                        <Box pt={4} backgroundColor="#151A21">
                             <InputField name="email" placeholder="email" label="Email" />
                         </Box>
-                        <Box mt={4}>
+                        <Box pt={4} backgroundColor="#151A21">
                             <InputField name="password" placeholder="password" label="Password" type="password" />
                         </Box>
-                        <Flex mt={5} align="center" justify="space-between" color="#0B0E11">
+                        <Flex pt={5} align="center" justify="space-between" color="#0B0E11" backgroundColor="#151A21">
                             <StandardButton height="38px" width="120px" content="Register" isLoading={isSubmitting} />
-                            <StandardLink href="/login" color='red' fontSize='15px' content='Already have an account?' />
+                            <StandardLink backgroundColor="#151A21" href="/login" color='red' fontSize='15px' content='Already have an account?' />
                         </Flex>
                     </Form>
                 </Box>

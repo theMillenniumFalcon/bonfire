@@ -6,6 +6,7 @@ import { RoomBottomBarRightIconGrp } from "./RoomBottomBarRightIconGrp";
 export interface RoomCardBottomBarProps { }
 
 export const RoomCardBottomBar: React.FC<RoomCardBottomBarProps> = ({ }) => {
+
     return (
         <Flex p={4} alignItems="center" justifyContent="space-between" height="9%" backgroundColor="#242C37">
             <RoomBottomBarLeftIconGrp />
