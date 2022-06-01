@@ -20,11 +20,6 @@ const main = async () => {
 
     const app = express()
 
-    app.use(cors({
-        origin: 'http://localhost:3000',
-        credentials: true
-    }))
-
     app.use(session({
         name: COOKIE,
         cookie: {
@@ -36,6 +31,11 @@ const main = async () => {
         saveUninitialized: false,
         secret: "asdfghjklqwertyuiopasdfghjkl",
         resave: false,
+    }))
+
+    app.use(cors({
+        origin: 'http://localhost:3000',
+        credentials: true
     }))
 
     app.get('/', (_, res) => {

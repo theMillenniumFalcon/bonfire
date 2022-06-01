@@ -9,6 +9,6 @@ export let dataSource = new DataSource({
     database: "hideout",
     logging: true,
     synchronize: false,
-    migrations: [path.join(__dirname, "./migrations/*")],
+    migrations: [path.join(__dirname, "../migrations/*")],
     entities: [User]
 })
