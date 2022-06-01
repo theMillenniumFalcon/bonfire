@@ -116,4 +116,4 @@ $ npm run build
 
 ### I have another question!
 
-Feel free to ask us on [Twitter](https://twitter.com/nishankstwt)! You can also email us at nishankpr2002@gmail.com.
+Feel free to ask me on [Twitter](https://twitter.com/nishankstwt)! You can also email me at nishankpr2002@gmail.com.
