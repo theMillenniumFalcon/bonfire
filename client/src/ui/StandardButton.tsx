@@ -5,6 +5,7 @@ export interface StandardButtonProps {
     height: string;
     width: string;
     content: any;
+    color?: string;
     onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
     isLoading?: any;
 }
@@ -12,6 +13,7 @@ export interface StandardButtonProps {
 export const StandardButton: React.FC<StandardButtonProps> = ({
     height,
     width,
+    color,
     content,
     onClick,
     isLoading
@@ -22,6 +24,7 @@ export const StandardButton: React.FC<StandardButtonProps> = ({
             size='sm'
             height={height}
             width={width}
+            color={color}
             isLoading={isLoading}
             border='0px'
             backgroundColor="#FD4D4D"
