@@ -1,12 +1,18 @@
+import { Box } from "@chakra-ui/react";
 import React from "react";
-import { MainWrapper } from "../wrappers/MainWrapper";
+import { LoginSection } from "../../ui/authentication/login/LoginSection";
+import { LeftCornerBlob } from "../../ui/blob/LeftCornerBlob";
+import { RightCornerBlob } from "../../ui/blob/RightCornerBlob";
+import { CreateNewRoomSection } from "../../ui/room/CreateNewRoomSection";
 
 export interface CreateNewRoomPageProps { }
 
 export const CreateNewRoomPage: React.FC<CreateNewRoomPageProps> = ({ }) => {
     return (
-        <MainWrapper>
-            Hello
-        </MainWrapper>
+        <Box width="100vw" height="94.3vh">
+            <LeftCornerBlob />
+            <RightCornerBlob />
+            <CreateNewRoomSection />
+        </Box>
     )
 }
