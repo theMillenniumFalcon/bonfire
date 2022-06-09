@@ -10,6 +10,7 @@ export const RoomChatInput: React.FC<RoomChatInputProps> = ({ }) => {
             border="none"
             background="#0B0E11"
             placeholder='Send a message'
+            color="#ffffff"
         />
     )
 }

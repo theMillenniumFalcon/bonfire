@@ -6,7 +6,7 @@ export interface LogoIconProps { }
 export const LogoIcon: React.FC<LogoIconProps> = ({ }) => {
     return (
         <Img
-            cursor='pointer'
+            cursor='default'
             htmlWidth='40px'
             htmlHeight='40px'
             objectFit='cover'
