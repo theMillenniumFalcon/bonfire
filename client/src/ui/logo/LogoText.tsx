@@ -6,7 +6,7 @@ export interface LogoTextProps { }
 export const LogoText: React.FC<LogoTextProps> = ({ }) => {
     return (
         <Heading as='h3' size='lg' color="#FD4D4D" cursor="pointer">
-            hideout
+            bonfire
         </Heading>
     )
 }
