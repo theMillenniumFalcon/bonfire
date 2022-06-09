@@ -7,11 +7,11 @@ export const LogoIcon: React.FC<LogoIconProps> = ({ }) => {
     return (
         <Img
             cursor='pointer'
-            htmlWidth='35px'
-            htmlHeight='35px'
+            htmlWidth='40px'
+            htmlHeight='40px'
             objectFit='cover'
             borderRadius="50%"
-            src='https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg'
+            src='logo.png'
             alt='hideout'
             mr={2}
         />
