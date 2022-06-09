@@ -1,6 +1,5 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import { LoginSection } from "../../ui/authentication/login/LoginSection";
 import { LeftCornerBlob } from "../../ui/blob/LeftCornerBlob";
 import { RightCornerBlob } from "../../ui/blob/RightCornerBlob";
 import { CreateNewRoomSection } from "../../ui/room/CreateNewRoomSection";

@@ -12,7 +12,7 @@
       "port": 5432,
       "username": "postgres",
       "password": "postgres",
-      "database": "hideout",
+      "database": "bonfire",
       "synchronize": false,
       "logging": true,
       "entities": ["src/entities/**/*.ts"],
