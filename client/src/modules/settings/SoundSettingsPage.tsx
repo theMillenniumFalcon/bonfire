@@ -1,7 +1,7 @@
 import React from "react";
 import { MainWrapper } from "../wrappers/MainWrapper";
-import { LeftSettingsSection } from "../sections/LeftSettingsSection";
-import { SettingsCentreSection } from "../sections/SettingsCentreSection";
+import { LeftSettingsSection } from "../section/LeftSettingsSection";
+import { SettingsCentreSection } from "../section/SettingsCentreSection";
 
 export const SoundSettingsPage: React.FC = () => {
     return (

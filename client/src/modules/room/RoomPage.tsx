@@ -1,8 +1,8 @@
 import React from "react";
-import { LeftSection } from "../sections/LeftSection";
+import { LeftSection } from "../section/LeftSection";
 import { MainWrapper } from "../wrappers/MainWrapper";
-import { RoomCentreSection } from "../sections/RoomCentreSection";
-import { RoomRightSection } from "../sections/RoomRightSection";
+import { RoomCentreSection } from "../section/RoomCentreSection";
+import { RoomRightSection } from "../section/RoomRightSection";
 
 export interface RoomPageProps { }
 

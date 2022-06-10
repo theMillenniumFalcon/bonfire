@@ -1,16 +1,16 @@
 import React from "react";
-import { DashboardCentreSection } from "../section/DashboardCentreSection";
+import { DeveloperCentreSection } from "../section/DeveloperCentreSection";
 import { LeftSection } from "../section/LeftSection";
 import { RightSection } from "../section/RightSection";
 import { MainWrapper } from '../wrappers/MainWrapper';
 
-export type DashboardPageProps = {}
+export type BotsPageProps = {}
 
-export const DashboardPage: React.FC<DashboardPageProps> = ({}) => {
+export const BotsPage: React.FC<BotsPageProps> = ({}) => {
     return (
         <MainWrapper>
             <LeftSection />
-            <DashboardCentreSection />
+            <DeveloperCentreSection />
             <RightSection />
         </MainWrapper>
     )
