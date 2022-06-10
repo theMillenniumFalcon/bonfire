@@ -1,7 +1,7 @@
 import React from "react";
-import { UserCentreSection } from "../sections/UserCentreSection";
-import { LeftSection } from "../sections/LeftSection";
-import { RightSection } from "../sections/RightSection";
+import { UserCentreSection } from "../section/UserCentreSection";
+import { LeftSection } from "../section/LeftSection";
+import { RightSection } from "../section/RightSection";
 import { MainWrapper } from "../wrappers/MainWrapper";
 
 export interface UserPageProps { }
