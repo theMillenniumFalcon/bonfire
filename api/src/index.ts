@@ -4,38 +4,65 @@ import express from 'express'
 import { ApolloServer } from 'apollo-server-express'
 import { ApolloServerPluginLandingPageGraphQLPlayground } from "apollo-server-core"
 import { buildSchema } from 'type-graphql'
+import { TestResolver } from "./resolvers/test"
+import { UserResolver } from "./resolvers/user"
+import { createConnection } from 'typeorm'
+import Redis from 'ioredis'
 import session from 'express-session'
+import connnectRedis from 'connect-redis'
+import { User } from "./entities/User"
+import { Room } from "./entities/Room"
+import path from "path"
 import cors from "cors"
 import { COOKIE, __prod__ } from "./constants/constants"
-import { TestResolver } from "./resolvers/test"
-import { dataSource } from "./utils/dataSource"
 
 const PORT = process.env.PORT || 4000
 
 const main = async () => {
 
-    let connection = await dataSource.initialize()
+    const connection = await createConnection({
+        type: "postgres",
+        username: "postgres",
+        password: "postgres",
+        database: "bonfire",
+        logging: true,
+        synchronize: false,
+        migrations: [path.join(__dirname, "./migrations/*")],
+        entities: [User, Room]
+    })
 
     await connection.runMigrations()
 
     const app = express()
 
-    app.use(session({
-        name: COOKIE,
-        cookie: {
-            maxAge: 1000 * 60 * 60 * 24 * 365 * 10,
-            httpOnly: true,
-            sameSite: 'lax',
-            secure: __prod__
-        },
-        saveUninitialized: false,
-        secret: "asdfghjklqwertyuiopasdfghjkl",
-        resave: false,
-    }))
+    const RedisStore = connnectRedis(session)
+    const redis = new Redis({
+        port: 6379,
+        host: '127.0.0.1',
+        connectTimeout: 10000,
+        lazyConnect: true
+    })
 
     app.use(cors({
         origin: 'http://localhost:3000',
         credentials: true
+    }))
+
+    app.use(session({
+        name: COOKIE,
+        store: new RedisStore({
+            client: redis,
+            disableTouch: true,
+        }),
+        cookie: {
+            maxAge: 1000 * 60 * 60 * 24 * 365 * 10,
+            httpOnly: true,
+            sameSite: 'lax', // * csrf
+            secure: __prod__ // * cookie only works in https
+        },
+        saveUninitialized: false,
+        secret: "asdfghjklqwertyuiopasdfghjkl",
+        resave: false,
     }))
 
     app.get('/', (_, res) => {
@@ -44,11 +71,11 @@ const main = async () => {
 
     const apolloServer = new ApolloServer({
         schema: await buildSchema({
-            resolvers: [TestResolver],
+            resolvers: [TestResolver, UserResolver],
             validate: false
         }),
         // * context is an object that is accessible to all the resolvers
-        context: ({ req, res }) => ({ req, res }),
+        context: ({ req, res }) => ({ req, res, redis }),
         plugins: [
             ApolloServerPluginLandingPageGraphQLPlayground(),
         ],

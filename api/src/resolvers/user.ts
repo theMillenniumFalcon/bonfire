@@ -2,11 +2,11 @@ import { UserRegisterInput } from "../inputs/UserRegisterInput"
 import { UserLoginInput } from "../inputs/UserLoginInput"
 import { Arg, Ctx, FieldResolver, Mutation, Query, Resolver, Root } from "type-graphql"
 import { Context } from "../types/types"
-import { getConnection } from "typeorm"
 import { User } from "../entities/User"
 import { UserResponse } from "../responses/UserResponse"
 import argon2 from 'argon2'
 import { COOKIE } from "../constants/constants";
+import { getConnection } from "typeorm"
 
 @Resolver(User)
 export class UserResolver {
@@ -70,7 +70,7 @@ export class UserResolver {
             }
         }
         const hashedPassword = await argon2.hash(options.password)
-        let user
+        let user: any
         try {
             const result = await getConnection().createQueryBuilder().insert().into(User).values({
                 username: options.username,
