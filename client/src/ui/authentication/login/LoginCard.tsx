@@ -8,7 +8,7 @@ export interface LoginCardProps { }
 export const LoginCard: React.FC<LoginCardProps> = ({ }) => {
     return (
         <Box paddingTop={10} paddingLeft={6} paddingRight={6} backgroundColor="#151A21" borderRadius="4px" height="50vh" width="30vw" zIndex="1">
-            <StandardAuthText backgroundColor="#151A21" fontSize="20px" fontWeight="600">
+            <StandardAuthText color="#ffffff" backgroundColor="#151A21" fontSize="20px" fontWeight="600">
                 Welcome back!
             </StandardAuthText>
             <Flex align="center" justify="center" backgroundColor="#151A21" height="80%">
