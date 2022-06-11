@@ -4,6 +4,7 @@ import React from "react";
 export interface StandardAuthTextProps {
     fontSize?: string;
     children: any;
+    color?: string;
     backgroundColor?: string;
     marginTop?: string;
     marginBottom?: string;
@@ -11,12 +12,13 @@ export interface StandardAuthTextProps {
     cursor?: string;
 }
 
-export const StandardAuthText: React.FC<StandardAuthTextProps> = ({ children, fontSize, cursor, backgroundColor, marginTop, marginBottom, fontWeight }) => {
+export const StandardAuthText: React.FC<StandardAuthTextProps> = ({ children, fontSize, cursor, color, backgroundColor, marginTop, marginBottom, fontWeight }) => {
     return (
         <Text
             fontSize={fontSize}
             backgroundColor={backgroundColor}
-            letterSpacing="1px" color="#ffffff"
+            color={color}
+            letterSpacing="1px"
             fontWeight={fontWeight} marginTop={marginTop}
             marginBottom={marginBottom}
             cursor={cursor}
