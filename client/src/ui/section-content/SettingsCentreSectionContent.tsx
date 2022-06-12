@@ -2,6 +2,7 @@ import { Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import React from "react";
 import { PrivacySettings } from "../settings/PrivacySettings";
+import { ProfileSettings } from "../settings/ProfileSettings";
 import { SoundSettings } from "../settings/SoundSettings";
 import { VoiceSettings } from "../settings/VoiceSettings";
 
@@ -11,7 +12,11 @@ export const SettingsCentreSectionContent: React.FC<SettingsCentreSectionContent
     const router = useRouter()
     const setting = ((router.asPath.split('/')[2]) as unknown) as string
     let body = null
-    if (String(setting) === "voice") {
+    if (String(setting) === "profile") {
+        body = (
+            <ProfileSettings />
+        )
+    } else if (String(setting) === "voice") {
         body = (
             <VoiceSettings />
         )
