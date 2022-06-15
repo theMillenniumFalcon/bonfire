@@ -5,9 +5,9 @@ import React from 'react'
 import { InputField } from '../../modules/input-field/InputField'
 import { StandardButton } from '../StandardButton'
 
-interface ReviewPageFormProps { }
+interface ReviewFormProps { }
 
-export const ReviewPageForm: React.FC<ReviewPageFormProps> = ({ }) => {
+export const ReviewForm: React.FC<ReviewFormProps> = ({ }) => {
     const router = useRouter()
     //   const [, register] = useRegisterMutation()
 
@@ -24,19 +24,16 @@ export const ReviewPageForm: React.FC<ReviewPageFormProps> = ({ }) => {
             //   return register(values)
         }}>
             {({ isSubmitting }) => (
-                <Box backgroundColor="red" width="40vw" color="#ffffff">
-                    <Form>
-                        <Box mt={4}>
-                            <InputField name="username" placeholder="username" label="Username" />
-                        </Box>
-                        <Box mt={4}>
-                            <InputField textarea name="review" placeholder="review" label="Review" />
-                        </Box>
-                        <Box mt={5} color="#0B0E11">
-                            <StandardButton height="38px" width="120px" content="Send Review" isLoading={isSubmitting} />
-                        </Box>
-                    </Form>
-                </Box>
+                <Box color="#ffffff" width="100%">
+                <Form>
+                    <Box pt={4} backgroundColor="#151A21">
+                        <InputField textarea name="review" placeholder="review" label="Review" />
+                    </Box>
+                    <Flex pt={5} align="center" justify="space-between" color="#0B0E11" backgroundColor="#151A21">
+                        <StandardButton height="38px" width="120px" content="Submit review" isLoading={isSubmitting} />
+                    </Flex>
+                </Form>
+            </Box>
             )}
         </Formik>
     )
