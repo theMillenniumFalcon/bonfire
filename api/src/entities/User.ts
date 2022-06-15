@@ -13,7 +13,7 @@ export class User extends BaseEntity {
     username!: string;
 
     @Field()
-    @Column()
+    @Column({ nullable: true })
     displayName: string;
 
     @Field()
@@ -24,31 +24,31 @@ export class User extends BaseEntity {
     password!: string;
 
     @Field()
-    @Column()
+    @Column({ nullable: true })
     bio: string;
 
     @Field(() => Number)
-    @Column()
+    @Column({ nullable: true })
     numFollowing: number;
 
     @Field(() => Number)
-    @Column()
+    @Column({ nullable: true })
     numFollowers: number;
 
     @Field()
-    @Column()
+    @Column({ nullable: true })
     avatarUrl: string;
 
     @Field()
-    @Column()
+    @Column({ nullable: true })
     bannerUrl: string;
 
     @Field()
-    @Column()
+    @Column({ nullable: true })
     online: boolean;
 
     @Field(() => String)
-    @Column()
+    @Column({ nullable: true })
     lastOnline: Date;
 
     @Field()

@@ -1,4 +1,4 @@
-import { HamburgerIcon, ExternalLinkIcon, InfoIcon, SettingsIcon, QuestionIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, ExternalLinkIcon, InfoIcon, SettingsIcon, QuestionIcon, LinkIcon } from "@chakra-ui/icons";
 import { Menu, MenuButton, IconButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import React from "react";
@@ -37,6 +37,12 @@ export const RightSectionUserDropDown: React.FC<RightSectionUserDropDownProps> =
                 onClick={() => router.push('/developer/bots')}>
                     <StandardUserText color="#ffffff" fontSize="15px" fontWeight="600">
                         Bots
+                    </StandardUserText>
+                </MenuItem>
+                <MenuItem icon={<LinkIcon />} style={{ backgroundColor: "#0B0E11" }}
+                onClick={() => router.push('/review')}>
+                    <StandardUserText color="#ffffff" fontSize="15px" fontWeight="600">
+                        Write a review
                     </StandardUserText>
                 </MenuItem>
                 <MenuItem icon={<ExternalLinkIcon />} style={{ backgroundColor: "#0B0E11" }}

@@ -2,7 +2,9 @@ import { Box, Flex } from '@chakra-ui/react'
 import { Formik, Form } from 'formik'
 import { useRouter } from 'next/router'
 import React from 'react'
+import { useRegisterMutation } from '../../generated/graphql'
 import { InputField } from '../../modules/input-field/InputField'
+import Errors from '../../utils/Errors'
 import { StandardButton } from '../StandardButton'
 import { StandardLink } from '../StandardLink'
 
@@ -10,19 +12,20 @@ interface RegisterFormProps { }
 
 export const RegisterForm: React.FC<RegisterFormProps> = ({ }) => {
     const router = useRouter()
-    //   const [, register] = useRegisterMutation()
+    const [, register] = useRegisterMutation()
 
     return (
         <Formik initialValues={{ username: "", email: "", password: "" }} onSubmit={async (values, { setErrors }) => {
-            //   const response = await register(values)
-            //   if (response.data?.register.errors) {
+            // const response = await register(values)
+            // if (response.data?.register.errors) {
             //     setErrors(Errors(response.data.register.errors))
-            //   } else if (response.data?.register.user) {
+            // } else if (response.data?.register.user) {
             //     // * worked
-            //     router.push('/')
-            //   }
-            //   console.log(values)
-            //   return register(values)
+            //     router.push('/dashboard')
+            // }
+            // console.log(values)
+            // return register(values)
+            console.log(values)
         }}>
             {({ isSubmitting }) => (
                 <Box color="#ffffff" width="100%">
